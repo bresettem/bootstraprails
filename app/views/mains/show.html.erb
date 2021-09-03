@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @main.title %>
+</p>
+<p>
+  <%= image_tag(@main.photo, width: 200) if @main.photo.attached? %>
+</p>
+<%= link_to 'Edit', edit_main_path(@main) %> |
+<%= link_to 'Back', mains_path %>
